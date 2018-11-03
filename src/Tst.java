@@ -3,5 +3,6 @@ public class Tst {
         System.out.println("lof");
         System.out.println("lof");
         System.out.println("bob");
+        System.out.println("bob");
     }
 }
