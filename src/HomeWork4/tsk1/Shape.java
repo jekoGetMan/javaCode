@@ -11,23 +11,26 @@ package HomeWork4.tsk1;
 
 public abstract class Shape{
 
-    abstract double figSquare();
+    abstract double figureSquare();
 
-    static double calculateSum(Shape shape1, Shape shape2) {
-        return (shape1.figSquare()+shape2.figSquare());
+    static double halfSum(Shape shape1, Shape shape2) {
+        return (shape1.figureSquare() + shape2.figureSquare());
     }
+
     public static void main (String[] args){
 
-        Triangle triangle = new Triangle(6.8, 6.0);
-        Trapezium trapezium = new Trapezium(6.8, 10.0, 15.8);
-        Parallelogram parallelogram = new Parallelogram(8.7, 2.0);
-        Ring ring = new Ring(5.7);
+        //Declaration of objects
+        Ring ring = new Ring(3.2);
+        Trapezium trapezium = new Trapezium(4.3, 12.0, 12.3);
+        Parallelogram parallelogram = new Parallelogram(9.7, 3.1);
+        Triangle triangle = new Triangle(5.4, 7.0);
 
-        System.out.println(calculateSum(trapezium, triangle));
-        System.out.println(calculateSum(ring, parallelogram));
+        //1 case
+        System.out.println("half of the sum is:\t " + halfSum(trapezium, triangle));
+        System.out.println("half of the sum is:\t " + halfSum(ring, parallelogram));
 
-        double sum = trapezium.figureSquare() + triangle.figureSquare() + parallelogram.figureSquare() + ring.figureSquare();
-        System.out.println("The whole sum is:\t" + sum);
+        double wholeSum = trapezium.figureSquare() + triangle.figureSquare() + parallelogram.figureSquare() + ring.figureSquare();
+        //2 case
+        System.out.println("The whole sum is:\t" + wholeSum);
     }
-
 }
