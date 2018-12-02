@@ -1,46 +1,54 @@
 package HomeWork4.tsk2;
 
+//Импортим, чтобы использовать наши списки
 import java.util.ArrayList;
 import java.util.List;
 
 public class Planet {
     private String name;
 
-    // Создали Listu через соответсвующих классах(Ocean/Continent/Island) через объект ArrayList
-    private List<Ocean> oceanList = new ArrayList<>();
-    private List<Continent> continentList = new ArrayList<>();
-    private List<Island> islandList = new ArrayList<>();
+    // Создали Listы через соответсвующие классах(Ocean/Continent/Island) через объект ArrayList
+    private ArrayList<Ocean> linkListOcean = new ArrayList<>();
+    private ArrayList<Continent> linkListContinent = new ArrayList<>();
+    private ArrayList<Island> linkListIsland = new ArrayList<>();
+
 
     public Planet(String name) {
         this.name = name;
-    }
-
-    public void addOcean(Ocean ocean) {
-        oceanList.add(ocean);
-    }
-
-    public void addContinent(Continent continent) {
-        continentList.add(continent);
-    }
-
-    public void addIsland(Island island) {
-        islandList.add(island);
     }
 
     public String getName() {
         return name;
     }
 
+
+
+    //add values - new values
+    public void newOcean(Ocean ocean) {
+        linkListOcean.add(ocean);
+    }
+
+    public void newContinent(Continent continent) {
+        linkListContinent.add(continent);
+    }
+
+    public void newIsland(Island island) {
+        linkListIsland.add(island);
+    }
+
+
+
+    //getLists
     public List<Ocean> getOceanList() {
-        return oceanList;
+        return linkListOcean;
     }
 
     public List<Continent> getContinentList() {
-        return continentList;
+        return linkListContinent;
     }
 
     public List<Island> getIslandList() {
-        return islandList;
+        return linkListIsland;
     }
 }
 
