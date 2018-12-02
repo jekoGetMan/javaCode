@@ -6,6 +6,7 @@ import java.util.List;
 public class Planet {
     private String name;
 
+    // Создали Listu через соответсвующих классах(Ocean/Continent/Island) через объект ArrayList
     private List<Ocean> oceanList = new ArrayList<>();
     private List<Continent> continentList = new ArrayList<>();
     private List<Island> islandList = new ArrayList<>();
