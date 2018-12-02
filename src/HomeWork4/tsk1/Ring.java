@@ -1,6 +1,6 @@
 package HomeWork4.tsk1;
 
-public class Ring extends Shape implements getSquare {
+public class Ring extends Shape implements FigureSquare {
         //final static double PI = 3.1415;
         double ringRadius;
 
@@ -10,7 +10,7 @@ public class Ring extends Shape implements getSquare {
         }
 
         @Override
-        public double getSquare() {
+        public double figureSquare() {
             return Math.PI * Math.pow(ringRadius,2);
         }
     }

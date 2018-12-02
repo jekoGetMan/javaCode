@@ -1,6 +1,6 @@
 package HomeWork4.tsk1;
 
-public class Trapezium extends Shape implements getSquare {
+public class Trapezium extends Shape implements FigureSquare{
     double trapeziumTopBase;
     double trapeziumDownBase;
     double trapeziumHeight;
@@ -15,7 +15,7 @@ public class Trapezium extends Shape implements getSquare {
     }
 
     @Override
-    public double getSquare() {
+    public double figureSquare() {
         return (0.5 * (trapeziumTopBase + trapeziumDownBase) * trapeziumHeight);
     }
 }

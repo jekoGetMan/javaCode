@@ -1,19 +1,19 @@
 package HomeWork4.tsk1;
 
-public class Triangle extends Shape implements getSquare {
+public class Triangle extends Shape implements FigureSquare{
     double triagleBase;
     double triangleHeight;
 
     public Triangle(double triagle_base, double triangle_height) {
-        Math.abs(triagle_base);
-        Math.abs(triangle_height);
-        this.triagleBase = triagle_base;
-        this.triangleHeight = triangle_height;
+        Math.abs(triagleBase);
+        Math.abs(triangleHeight);
+        this.triagleBase = triagleBase;
+        this.triangleHeight = triangleHeight;
 
     }
 
     @Override
-    public double getSquare() {
-        return (0.5*triagle_base)*triangle_height;
+    public double figureSquare() {
+        return (0.5*triagleBase)*triangleHeight;
     }
 }
