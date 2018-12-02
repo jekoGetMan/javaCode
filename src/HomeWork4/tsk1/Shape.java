@@ -12,8 +12,6 @@ import java.util.List;
  */
 public  class Shape {
 
-
-
     public static void main (String[] args){
 //        List<getSquare> shapes = new ArrayList<getSquare>();
 //        shapes.add(new Ring(5.7));
